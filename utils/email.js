@@ -6,7 +6,7 @@ const sendEmail = ({ to, subject, message }) => new Promise((resolve, reject) =>
         service: "gmail",
         auth: {
             user:process.env.FROM_EMAIL,
-            pass: process.env.EMAIL_PASS
+            pass: process.env.FROM_PASS
         }
     })
     transport.sendMail({
